@@ -2,6 +2,46 @@
 layout: main
 title:
 description:
+
+webmaps:
+  - name: Imhof
+    url: https://api.tiles.mapbox.com/v4/james-lane-conkling.84217059/page.html?access_token=pk.eyJ1IjoiamFtZXMtbGFuZS1jb25rbGluZyIsImEiOiJ3RHBOc1BZIn0.edCFqVis7qgHPRgdq0WYsA#11/30.1027/81.2645
+  - name: Hypsometric
+    url: https://api.tiles.mapbox.com/v4/james-lane-conkling.e78b500f/page.html?access_token=pk.eyJ1IjoiamFtZXMtbGFuZS1jb25rbGluZyIsImEiOiJ3RHBOc1BZIn0.edCFqVis7qgHPRgdq0WYsA#10/27.6872/87.9648
+  - name: Base Map, Dim
+    url: https://api.tiles.mapbox.com/v4/james-lane-conkling.5630f970/page.html?access_token=pk.eyJ1IjoiamFtZXMtbGFuZS1jb25rbGluZyIsImEiOiJ3RHBOc1BZIn0.edCFqVis7qgHPRgdq0WYsA#8/36.315/37.029
+  - name: Base Map, Bright
+    url: https://api.tiles.mapbox.com/v4/james-lane-conkling.natural-earth/page.html?access_token=pk.eyJ1IjoiamFtZXMtbGFuZS1jb25rbGluZyIsImEiOiJ3RHBOc1BZIn0.edCFqVis7qgHPRgdq0WYsA#6/11.278/34.299
+  - name: NOLA Hydrography
+    url: https://api.tiles.mapbox.com/v4/james-lane-conkling.NOLADim/page.html?access_token=pk.eyJ1IjoiamFtZXMtbGFuZS1jb25rbGluZyIsImEiOiJ3RHBOc1BZIn0.edCFqVis7qgHPRgdq0WYsA#12/29.8359/-89.9829
+  - name: Zanzibar Population
+    url: https://api.tiles.mapbox.com/v4/james-lane-conkling.worldpop_zanzibar/page.html?access_token=pk.eyJ1IjoiamFtZXMtbGFuZS1jb25rbGluZyIsImEiOiJ3RHBOc1BZIn0.edCFqVis7qgHPRgdq0WYsA#10/-6.0771/39.5920
+  - name: Landscan
+    url: https://a.tiles.mapbox.com/v3/helsinki.h5550eo0/page.html?secure=1#7/25.528/475.851
+  - name: SF Slim
+    url: https://api.tiles.mapbox.com/v4/james-lane-conkling.sf_slim/page.html?access_token=pk.eyJ1IjoiamFtZXMtbGFuZS1jb25rbGluZyIsImEiOiJ3RHBOc1BZIn0.edCFqVis7qgHPRgdq0WYsA#13/37.7713/-122.4244
+  - name: Penobscot
+    url: https://api.tiles.mapbox.com/v4/james-lane-conkling.penobscot/page.html?access_token=pk.eyJ1IjoiamFtZXMtbGFuZS1jb25rbGluZyIsImEiOiJ3RHBOc1BZIn0.edCFqVis7qgHPRgdq0WYsA#11/44.0370/-68.8293
+  - name: DOT Night
+    url: https://api.tiles.mapbox.com/v4/james-lane-conkling.trial42/page.html?access_token=pk.eyJ1IjoiamFtZXMtbGFuZS1jb25rbGluZyIsImEiOiJ3RHBOc1BZIn0.edCFqVis7qgHPRgdq0WYsA#5/38.117/-85.649
+  - name: Fresh Water
+    url: https://api.tiles.mapbox.com/v4/james-lane-conkling.fresh_water/page.html?access_token=pk.eyJ1IjoiamFtZXMtbGFuZS1jb25rbGluZyIsImEiOiJ3RHBOc1BZIn0.edCFqVis7qgHPRgdq0WYsA#5/30.468/117.466
+
+printmaps:
+  - name: Electricity on the Move
+    url: https://dl.dropboxusercontent.com/u/49790262/china_energy_static_iv.jpg
+  - name: Dymaxion Map
+    url: https://dl.dropboxusercontent.com/u/49790262/jlc_dymaxion_submit.jpg
+  - name: Kibera Schools
+    url: https://dl.dropboxusercontent.com/u/49790262/kibera_schools_a1_v4.pdf
+
+websites:
+  - name: Moabi
+    url: rdc.moabi.org
+  - name: Extractives and Fragile States
+    url: http://extractivesfragilestates.github.io/ExtractivesFragileStates/countries/afghanistan/
+  - name: China Hydropower
+    url: https://dl.dropboxusercontent.com/u/49790262/wwc_site/index.html
 ---
 <div class="row">
 	<div class="medium-12 column">
@@ -11,12 +51,25 @@ description:
     <p>After getting sick of throwing around dropbox links, and maintaining multiple CV-style collections of my work, I decided to create this simple, small website.  Given more time I would have made it even smaller.</p>
 
     <h3>Web Maps</h3>
+    <ul>
+      {% for webmap in page.webmaps %}
+        <li><a href="{{webmap.url}}">{{webmap.name}}</a></li>
+      {% endfor %}
+    </ul>
 
     <h3>Print Maps</h3>
+    <ul>
+      {% for pmap in page.printmaps %}
+        <li><a href="{{pmap.url}}">{{pmap.name}}</a></li>
+      {% endfor %}
+    </ul>
 
     <h3>Websites</h3>
-
-    <h3>About this site</h3>
+    <ul>
+      {% for site in page.websites %}
+        <li><a href="{{site.url}}">{{site.name}}</a></li>
+      {% endfor %}
+    </ul>
 
     <small class="quiet">This site is built on jekyll and foundation.  <em>Cheers to <strong>@daigofuji</strong> for <a href="https://github.com/daigofuji/jekyll-foundation-5-starter/tree/gh-pages">jekyll-foundation-5-starter</a></em></small>
 
