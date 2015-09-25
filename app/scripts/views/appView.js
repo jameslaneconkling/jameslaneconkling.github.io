@@ -2,23 +2,27 @@ var Backbone = require('backbone');
 var $ = require('jquery');
 var _ = require('underscore');
 var HeaderView = require('./headerView');
+var SideView = require('./sideView');
 
 module.exports = Backbone.View.extend({
-  template: require('../templates/app.hbs'),
-
   id: 'app',
 
-  events: {},
+  plateTemplates: [
+    require('../templates/plates/code.hbs'),
+    require('../templates/plates/cartography.hbs'),
+  ],
 
   initialize: function (){
-    // render child views
-    this.headerView = new HeaderView({ model: this.model });
-    $('body').append( this.headerView.render() );
     $('body').append( this.render() );
   },
 
   render: function () {
-    this.$el.html( this.template(this.model.toJSON()) );
+    // render child templates
+    this.$el.append( new HeaderView({ model: this.model }).render() );
+    this.$el.append( new SideView({ model: this.model }).render() )
+    this.plateTemplates.forEach(function(template){
+      this.$el.append( template(this.model.toJSON()) );
+    }, this);
     return this.$el;
   }
 

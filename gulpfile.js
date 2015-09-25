@@ -44,6 +44,7 @@ function bundle() {
 
 // pre-bundle transforms
 // e.g. b.transform(coffeeify); b.transform(reactify);
+// b.transform('folderify');
 
 gulp.task('browserify', bundle);
 b.on('update', bundle);
