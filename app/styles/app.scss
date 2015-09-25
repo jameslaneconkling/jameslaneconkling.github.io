@@ -1,8 +1,8 @@
-@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700);
+@import url(http://fonts.googleapis.com/css?family=Lato:200|Open+Sans:400,600);
 @import 'palette';
 
 body {
-  font-family: "Lato", sans-serif;
+  font-family: "OpenSans", "Lato", sans-serif;
   position: absolute;
   top: 0;
   bottom: 0;
@@ -46,6 +46,8 @@ a {
 
 .quiet { color: $quiet; }
 
+small { font-size: 0.7rem; }
+
 
 /*******************/
 /* Block Elements */
@@ -70,51 +72,33 @@ header {
   position: fixed;
   top: 0;
   width: 100%;
-  background-color: transparent;
   font-weight: 200;
   z-index: 1;
-  padding: 18px 0;
+  border-bottom: 1px solid #AAA;
   }
-  header:hover,
-  header.active {
-    background-color: #FAFAFA;
-    border-bottom: 1px solid #AAA;
-    opacity: 1;
-  }
-  header.active {
-    padding: 0;
-  }
-  header .title,
-  header .menu{
-    padding: 1rem 0;
-    margin: 0;
-    line-height: 1rem;
+  header .columns {
+    height: 60px;
   }
   header .title {
-    font-size: 3rem;
-    float: left;
+    font-size: 2rem;
     letter-spacing: 4px;
+    // text-transform: uppercase;
   }
-  header.active .title {
-    font-size: 1.4rem;
-  }
-  header .menu {
-    float: right;
-    letter-spacing: 1px;
-  }
-  header li {
+  header .menu li {
     float: left;
     padding-left:12px;
   }
-  header li a {
-    color: #FFF;
-    text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.6);
+  header .menu li a {
+    vertical-align: middle;
+    display: table-cell;
   }
-  header.active li a,
-  header:hover li a{
-    color: #333;
-    text-shadow: none;
-  }
+  // THIS MIGHT BE WORTH PLAYING AROUND WITH
+  // header .menu li span {
+  //   display: none;
+  // }
+  // header .menu li:hover span {
+  //   display: none;
+  // }
 
 #app {
   position: fixed;
@@ -143,44 +127,6 @@ header {
     font-weight: 100;
     letter-spacing: 14px;
     text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.6);
-  }
-
-footer {
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  height: 62px;
-  background-color: #EEE;
-  font-size: 0.6rem;
-  line-height: 0.8rem;
-  padding: 4px 0;
-  border-top: 1px solid #CCC;
-  z-index: 1;
-  opacity: 0.6;
-  }
-  footer .row {
-    height: 100%;
-  }
-  footer .columns {
-    /* v-align-center */
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);
-  }
-  footer ul { opacity: 0; }
-  footer a {
-    color: #888;
-  }
-  footer.active,
-  footer:hover {
-    opacity: 1;
-  }
-  footer:hover {
-    height: 94px;
-  }
-  footer:hover ul {
-    margin-bottom: 0;
-    opacity: 1;
   }
 
 

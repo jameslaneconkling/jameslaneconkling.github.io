@@ -2,7 +2,7 @@ var Backbone = require('backbone');
 
 module.exports = Backbone.View.extend({
 
-  template: require('../../templates/header.hbs'),
+  template: require('../templates/header.hbs'),
 
   tagName: 'header',
 
