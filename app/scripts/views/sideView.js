@@ -1,7 +1,7 @@
 var Backbone = require('backbone');
 
 module.exports = Backbone.View.extend({
-  id: 'sidebar',
+  id: 'side',
 
   template: require('../templates/side.hbs'),
 

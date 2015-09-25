@@ -13,10 +13,15 @@ module.exports = Backbone.View.extend({
   },
 
   render: function () {
+    var container = $('<div class="columns col12">');
+    var outerContainer = $('<div class="row">').append(container);
     // render child templates
+    container.append( new SideView({ model: this.model }).render() )
+    container.append( new PlateView({ model: this.model }).render() )
+
     this.$el.append( new HeaderView({ model: this.model }).render() );
-    this.$el.append( new SideView({ model: this.model }).render() )
-    this.$el.append( new PlateView({ model: this.model }).render() )
+
+    this.$el.append(outerContainer);
     return this.$el;
   }
 
