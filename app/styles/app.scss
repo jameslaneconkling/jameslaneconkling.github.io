@@ -2,7 +2,7 @@
 @import 'palette';
 
 body {
-  font-family: "OpenSans", "Lato", sans-serif;
+  font-family: "Lato", sans-serif;
   position: absolute;
   top: 0;
   bottom: 0;
@@ -131,11 +131,12 @@ header {
 
 
 /*******************/
-/* Pages */
+/* Fonts */
 /*******************/
-.page.pageNumber-0 {
-  background-image: url('../images/alberto-korda.jpg');
-  background-size: cover;
-  background-position: 50% 14%;
-  }
+@font-face
+{
+font-family: mplus-light;
+src: url('mplus-fonts.sourceforge.jp/webfonts/mplus-2m-light.ttf')
+     format("truetype");
+}
 
