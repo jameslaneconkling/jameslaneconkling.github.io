@@ -95,6 +95,9 @@ gulp.task('move', function(){
   gulp.src('./node_modules/zurb-foundation-npm/css/foundation.min.css')
     .pipe(gulp.dest('./build/styles'));
 
+  gulp.src('./app/fonts/*.ttf')
+    .pipe(gulp.dest('./build/fonts'));
+
 });
 
 /****************************************************/

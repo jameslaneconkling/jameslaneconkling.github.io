@@ -23,3 +23,5 @@ gulp
 ```
 gulp deploy
 ```
+
+The font used is **M+ C Type-2**, by [M+ Fonts](http://mplus-fonts.osdn.jp/mplus-outline-fonts/design/index-en.html).

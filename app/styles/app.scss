@@ -1,13 +1,14 @@
-@import url(http://fonts.googleapis.com/css?family=Lato:200|Open+Sans:400,600);
+// @import url(http://fonts.googleapis.com/css?family=Lato:200|Open+Sans:400,600);
 @import 'palette';
 
 body {
-  font-family: "Lato", sans-serif;
+  font-family: "mplus-light", sans-serif;
   position: absolute;
   top: 0;
   bottom: 0;
   width: 100%;
   background-color: $bg;
+  letter-spacing: 1px;
 }
 
 
@@ -53,7 +54,9 @@ small { font-size: 0.7rem; }
 /* Block Elements */
 /*******************/
 h1,h2,h3 {
-  font-weight: 200;
+  font-family: "mplus-light", sans-serif;
+  // font-weight: 200;
+  letter-spacing: 4px;
 }
 
 p {
@@ -74,14 +77,13 @@ header {
   width: 100%;
   font-weight: 200;
   z-index: 1;
-  border-bottom: 1px solid #AAA;
+  // border-bottom: 1px solid #AAA;
   }
   header .columns {
-    height: 60px;
+    height: 70px;
   }
   header .title {
     font-size: 2rem;
-    letter-spacing: 4px;
     // text-transform: uppercase;
   }
   header .menu li {
@@ -136,7 +138,9 @@ header {
 @font-face
 {
 font-family: mplus-light;
-src: url('mplus-fonts.sourceforge.jp/webfonts/mplus-2m-light.ttf')
+src: url('../fonts/mplus-2m-light.ttf')
      format("truetype");
+// src: url('mplus-fonts.sourceforge.jp/webfonts/mplus-2m-light.ttf')
+//      format("truetype");
 }
 
