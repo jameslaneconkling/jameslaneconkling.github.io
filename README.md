@@ -1,13 +1,20 @@
-## Deck
+Portfolio
+===========================
 
-A scroll-based, single-page app template.  Deck's scroll navigation is heavily inspired by Mike Bostock's [Stack](https://github.com/mbostock/stack).
+A minimal portfolio site.
 
-For a great overview of how to think about scroll navigation, read [How to Scroll](http://bost.ocks.org/mike/scroll/).
-
-### Development
-
+### Setup
 ```
 npm install
+
+# to generate image thumbnail, install graphics libraries
+brew install imagemagick
+brew install graphicsmagick
+```
+
+### Development
+The first build might take a while building all the image assets.  Subsequent builds will only regenerate changed images, and so should be much faster.
+```
 gulp
 ```
 

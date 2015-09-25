@@ -14,6 +14,8 @@ var uglify         = require('gulp-uglify');
 var sass           = require('gulp-sass');
 var autoprefixer   = require('gulp-autoprefixer');
 var imagemin       = require('gulp-imagemin');
+var imageResize    = require('gulp-image-resize');
+var rename         = require('gulp-rename');
 var _              = require('underscore');
 var ghPages        = require('gulp-gh-pages');
 
@@ -69,6 +71,20 @@ gulp.task('images', function(){
     .pipe( gulpif(ENV !== 'production', browserSync.reload({ stream: true })) );
 });
 
+gulp.task('thumb', function(){
+  gulp.src('./app/images/**')
+    .pipe(changed('./build/images/thumb')) // Ignore unchanged files
+    .pipe(imagemin())
+    .pipe(imageResize({
+      width : 100,
+      height : 100,
+      crop : true,
+      upscale : false
+    }))
+    //.pipe(rename(function (path) { path.basename += "-thumb"; })) // renaming files breaks gulp-changed.  TODO: gulp-changed's custom comparators might be a help here
+    .pipe(gulp.dest('./build/images/thumb'));
+});
+
 /****************************************************/
 // Move files not involved in a precompile
 /****************************************************/
@@ -116,7 +132,7 @@ gulp.task('gh-pages', function(){
 /****************************************************/
 // Exported tasks
 /****************************************************/
-gulp.task('build', ['browserify', 'sass', 'images', 'move']);
+gulp.task('build', ['browserify', 'sass', 'images', 'thumb', 'move']);
 
 gulp.task('default', ['dev', 'build', 'serve', 'watch']);
 

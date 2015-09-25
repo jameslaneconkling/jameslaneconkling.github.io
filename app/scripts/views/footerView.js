@@ -2,13 +2,11 @@ var Backbone = require('backbone');
 
 module.exports = Backbone.View.extend({
 
-  template: require('../templates/footer.hbs'),
+  template: require('../../templates/footer.hbs'),
 
   tagName: 'footer',
 
   className: 'animate',
-
-  events: {},
 
   initialize: function () {
     this.listenTo(this.model, 'showHeader', this.show);
