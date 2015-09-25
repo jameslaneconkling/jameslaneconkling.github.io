@@ -1,7 +1,4 @@
 var Backbone = require('backbone');
-var $ = require('jquery');
-var _ = require('underscore');
-var HeaderView = require('./headerView');
 
 module.exports = Backbone.View.extend({
   id: 'sidebar',
