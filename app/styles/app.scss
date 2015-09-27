@@ -74,11 +74,9 @@ p {
 /***************/
 
 header {
-  position: fixed;
+  position: absolute;
   top: 0;
   width: 100%;
-  font-weight: 200;
-  z-index: 1;
   // border-bottom: 1px solid #AAA;
   }
   header .columns {

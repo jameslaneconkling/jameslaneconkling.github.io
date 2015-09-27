@@ -9,9 +9,21 @@ module.exports = Backbone.View.extend({
   template: require('../templates/plate.hbs'),
 
   render: function () {
-    _.each(this.model.get('plates'), function(name, items){
-      this.$el.append( this.template({ items: items }) );
-    }, this);
+    this.$el.append( this.template({
+      name: 'projects',
+      items: this.model.get('projects')
+    }) );
+
+    this.$el.append( this.template({
+      name: 'code',
+      items: this.model.get('code')
+    }) );
+
+    this.$el.append( this.template({
+      name: 'cartography',
+      items: this.model.get('cartography')
+    }) );
+
     return this.$el;
   }
 

@@ -8,7 +8,7 @@ module.exports = Backbone.View.extend({
   initialize: function (){},
 
   render: function () {
-    this.$el.append( this.template(this.model.toJSON()) );
+    this.$el.append( this.template() );
     return this.$el;
   }
 

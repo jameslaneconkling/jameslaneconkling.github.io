@@ -7,32 +7,32 @@ module.exports = Backbone.Model.extend({
     this.set('github', 'jameslaneconkling');
     this.set('email', 'james.lane.conkling@gmail.com');
 
-    //
-    this.set('plates', {
-      projects: [
-        {
-          title: 'GDELT',
-          url: 'www.com'
-        }
-      ],
-      code: [
-        {
-          title: 'GDELT',
-          url: 'www.com'
-        },
-        {
-          title: 'GDELT',
-          url: 'www.com'
-        }
-      ],
-      cartography: [
-        {
-          title: 'GDELT',
-          url: 'www.com'
-        }
-      ]
+    // set portfolio project data
+    this.set('projects', [
+      {
+        title: 'GDELT',
+        url: 'www.com'
+      }
+    ]);
 
-    });
+    this.set('code', [
+      {
+        title: 'GDELT',
+        url: 'www.com'
+      },
+      {
+        title: 'GDELT',
+        url: 'www.com'
+      }
+    ]);
+
+    this.set('cartography', [
+      {
+        title: 'GDELT',
+        url: 'www.com'
+      }
+    ]);
+
   }
 
 });

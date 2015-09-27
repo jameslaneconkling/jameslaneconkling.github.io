@@ -1,5 +1,8 @@
-<ul>
-  {{#each items}}
-    <a href="#"><li>{{this}}</li></a>
-  {{/each}}
-</ul>
+<div class="{{name}}">
+  <h2 class="show-for-small-only">{{name}}</h2>
+  <ul class="no-bullet">
+    {{#each items}}
+      <a href="#"><li>{{this.title}}</li></a>
+    {{/each}}
+  </ul>
+</div>
