@@ -4,6 +4,8 @@ var _ = require('underscore');
 module.exports = Backbone.View.extend({
   id: 'plates',
 
+  className: 'columns small-12 medium-8 push-4',
+
   initialize: function (){},
 
   template: require('../templates/plate.hbs'),
