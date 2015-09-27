@@ -6,12 +6,9 @@ module.exports = Backbone.View.extend({
 
   tagName: 'header',
 
-  className: 'animate',
+  className: '',
 
   initialize: function () {
-    this.listenTo(this.model, 'change:user', this.render);
-    this.listenTo(this.model, 'showHeader', this.show);
-    this.listenTo(this.model, 'hideHeader', this.hide);
   },
 
   show: function(){

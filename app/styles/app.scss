@@ -72,15 +72,17 @@ p {
 /***************/
 /* Project CSS */
 /***************/
+#app {
+  position: relative;
+  height: 100%;
+}
 
 header {
   position: absolute;
   top: 0;
   width: 100%;
+  height: $headerHeight;
   // border-bottom: 1px solid #AAA;
-  }
-  header .columns {
-    height: $headerHeight;
   }
   header .title h2 {
     font-size: 1rem;
@@ -107,7 +109,7 @@ header {
   position: absolute;
   top: $headerHeight;
   bottom: 0;
-  padding: 1rem;
+  overflow: scroll;
 }
 
 #side {
