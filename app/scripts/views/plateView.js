@@ -1,18 +1,16 @@
 var Backbone = require('backbone');
+var _ = require('underscore');
 
 module.exports = Backbone.View.extend({
   id: 'plates',
 
-  plateTemplates: [
-    require('../templates/plates/code.hbs'),
-    require('../templates/plates/cartography.hbs'),
-  ],
-
   initialize: function (){},
 
+  template: require('../templates/plate.hbs'),
+
   render: function () {
-    this.plateTemplates.forEach(function(template){
-      this.$el.append( template(this.model.toJSON()) );
+    _.each(this.model.get('plates'), function(name, items){
+      this.$el.append( this.template({ items: items }) );
     }, this);
     return this.$el;
   }

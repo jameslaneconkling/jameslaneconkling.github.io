@@ -84,8 +84,8 @@ header {
   header .columns {
     height: $headerHeight;
   }
-  header .title {
-    font-size: 2rem;
+  header .title h2 {
+    font-size: 1rem;
     // text-transform: uppercase;
   }
   header .menu li {
@@ -110,10 +110,22 @@ header {
   top: $headerHeight;
   bottom: 0;
   padding: 1rem;
+}
+
+#side {
+  left: 0;
+  width: 30%;
   }
-  #side {
-    left: 0;
-    width: 30%;
+  #side ul {
+    list-style: none;
+    margin-left: 0;
+    margin-right: 0.4rem;
+  }
+  #side li {
+    text-transform: uppercase;
+    padding-bottom: 1.4rem;
+    font-size: 3rem;
+    font-weight: 400;
   }
   #plates {
     right: 0;
