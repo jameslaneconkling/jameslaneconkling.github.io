@@ -46,6 +46,9 @@ a {
     color: $link-hover;
     text-decoration: underline;
   }
+  a:focus {
+    color: $link;
+  }
 
 .quiet { color: $quiet; }
 
@@ -146,6 +149,12 @@ header {
   }
   #side li:last-child {
     padding-bottom: 0;
+  }
+  #side li.active a {
+    text-decoration: underline;
+  }
+  #side li:active a {
+    text-decoration: none;
   }
 
 #plates {

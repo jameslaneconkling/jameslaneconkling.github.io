@@ -160,7 +160,6 @@ module.exports = Backbone.Model.extend({
         print: false
       }
     ]);
-
   }
 
 });
