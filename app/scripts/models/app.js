@@ -70,10 +70,94 @@ module.exports = Backbone.Model.extend({
 
     this.set('cartography', [
       {
-        title: 'GDELT',
+        title: 'Imhof',
         url: 'www.com',
-        github: null,
-        description: null
+        description: null,
+        print: false
+      },
+      {
+        title: 'Hypsometric',
+        url: 'www.com',
+        description: null,
+        print: false
+      },
+      {
+        title: 'Base Map | Bright',
+        url: 'www.com',
+        description: null,
+        print: false
+      },
+      {
+        title: 'Base Map | Dark',
+        url: 'www.com',
+        description: null,
+        print: false
+      },
+      {
+        title: 'Evening',
+        url: 'www.com',
+        description: null,
+        print: false
+      },
+      {
+        title: 'Night',
+        url: 'www.com',
+        description: null,
+        print: false
+      },
+      {
+        title: 'Dymaxion',
+        url: 'www.com',
+        description: null,
+        print: true
+      },
+      {
+        title: 'Hydrography',
+        url: 'www.com',
+        description: null,
+        print: false
+      },
+      {
+        title: 'Kibera',
+        url: 'www.com',
+        description: null,
+        print: true
+      },
+      {
+        title: 'Rivers',
+        url: 'www.com',
+        description: null,
+        print: false
+      },
+      {
+        title: 'San Francisco',
+        url: 'www.com',
+        description: null,
+        print: false
+      },
+      {
+        title: "China's East-West Energy Transfer",
+        url: 'www.com',
+        description: null,
+        print: true
+      },
+      {
+        title: 'Penobscot',
+        url: 'www.com',
+        description: null,
+        print: false
+      },
+      {
+        title: 'Population',
+        url: 'www.com',
+        description: null,
+        print: false
+      },
+      {
+        title: 'Madagascar',
+        url: 'www.com',
+        description: null,
+        print: false
       }
     ]);
 
