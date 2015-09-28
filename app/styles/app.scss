@@ -73,8 +73,11 @@ p {
 /* Project CSS */
 /***************/
 #app {
-  position: relative;
-  height: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }
 
 header {
@@ -144,9 +147,20 @@ header {
   #side li:last-child {
     padding-bottom: 0;
   }
-  #plates {
-    // right: 0;
-    // width: 70%;
+
+#plates {
+  // right: 0;
+  // width: 70%;
+  }
+  .plate {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    opacity: 0;
+  }
+  .plate.active {
+    opacity: 1;
   }
 
 
