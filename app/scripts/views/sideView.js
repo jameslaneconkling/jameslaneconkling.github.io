@@ -12,17 +12,17 @@ module.exports = Backbone.View.extend({
   template: require('../templates/side.hbs'),
 
   initialize: function (){
-    this.listenTo(this.model, 'change:active', this.makeActive);
+    this.listenTo(this.model, 'change:collection', this.makeTitleActive);
   },
 
   showPlate: function(e){
     e.preventDefault();
 
-    this.model.set('active', e.target.text);
+    this.model.set('collection', e.target.text);
   },
 
-  makeActive: function(model){
-    var className = '.' + model.get('active');
+  makeTitleActive: function(model){
+    var className = '.' + model.get('collection');
     this.$el.find(className).addClass('active').siblings().removeClass('active');
   },
 

@@ -6,6 +6,7 @@ module.exports = Backbone.Model.extend({
     this.set('twitter', 'jamesconkling');
     this.set('github', 'jameslaneconkling');
     this.set('email', 'james.lane.conkling@gmail.com');
+    this.set('collection', null);
 
     // set portfolio project data
     this.set('projects', [

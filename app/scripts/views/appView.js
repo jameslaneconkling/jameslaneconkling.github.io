@@ -14,7 +14,7 @@ module.exports = Backbone.View.extend({
     $('body').append( this.render() );
 
     // set active plate
-    this.model.set('active', 'projects');
+    this.model.set('collection', 'projects');
   },
 
   render: function () {
