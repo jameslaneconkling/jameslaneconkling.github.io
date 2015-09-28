@@ -157,10 +157,9 @@ header {
     text-decoration: none;
   }
 
-#plates {
-  // right: 0;
-  // width: 70%;
-  }
+#plates {}
+@media (min-width: 642px) {
+  // only layer plates on medium - large screens
   .plate {
     position: absolute;
     top: 0;
@@ -171,17 +170,14 @@ header {
   .plate.active {
     opacity: 1;
   }
-
+}
 
 /*******************/
 /* Fonts */
 /*******************/
-@font-face
-{
+@font-face {
 font-family: mplus-light;
 src: url('../fonts/mplus-2m-light.ttf')
      format("truetype");
-// src: url('mplus-fonts.sourceforge.jp/webfonts/mplus-2m-light.ttf')
-//      format("truetype");
 }
 
