@@ -67,14 +67,14 @@ module.exports = Backbone.Model.extend({
         url: 'http://jameslaneconkling.github.io/deck/',
         github: 'https://github.com/jameslaneconkling/deck',
         description: "A scroll-based, single-page app template. Deck's scroll navigation is heavily inspired by Mike Bostock's Stack.  Look mom, no scroll-jacking.",
-        img: '',
+        img: 'code_ii.png',
       },
       {
         title: 'ImFree | Social Vending Machine of the Future',
         url: null,
         github: 'github.com/ImFreeApp',
         description: 'A highly scalable, SOE platform to detect latent communities-of-interest based user’s social media footprints.',
-        img: '',
+        img: 'code_ii.png',
       }
     ]);
 

@@ -77,8 +77,8 @@ gulp.task('thumb', function(){
     .pipe(changed('./build/images/thumb')) // Ignore unchanged files
     .pipe(imagemin())
     .pipe(imageResize({
-      width : 60,
-      height : 60,
+      width : 100,
+      height : 100,
       crop : true,
       upscale : false
     }))
