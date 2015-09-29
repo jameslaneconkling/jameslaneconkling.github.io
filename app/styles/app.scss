@@ -4,7 +4,7 @@ $headerHeight: 100px;
 $iconWidth: 50px;
 
 body {
-  font-family: "mplus-light", sans-serif;
+  font-family: "mplus-regular", sans-serif;
   position: absolute;
   top: 0;
   bottom: 0;
@@ -64,13 +64,13 @@ h1,h2,h3 {
 }
 
 h1,h2 { letter-spacing: 4px; }
-h1 { font-size: 2rem; }
-h2 { font-size: 1.4rem; }
+h1 { font-size: 3rem; }
+h2 { font-size: 1.6rem; }
 h3 { font-size: 1rem; }
 
 p {
+  font-family: "mplus-regular", sans-serif;
   font-size: 0.8rem;
-  font-weight: 200;
   // text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.3);
 }
 
@@ -133,11 +133,9 @@ header {
     margin-right: 0.4rem;
     margin-bottom: 0;
   }
-  #side li.title,
-  #plates h1.title {
+  #side h1 {
     text-transform: uppercase;
     font-size: 3rem;
-    font-weight: 400;
     line-height: 3rem;
     // won't work w/o calculated #side width
     text-overflow: clip;
@@ -203,6 +201,9 @@ header {
     overflow: scroll;
     opacity: 1;
   }
+  .item p {
+    color: #555;
+  }
 
 @media (min-width: 642px) {
   // only layer plates on medium - large screens
@@ -227,8 +228,13 @@ header {
 /* Fonts */
 /*******************/
 @font-face {
-font-family: mplus-light;
-src: url('../fonts/mplus-2m-light.ttf')
-     format("truetype");
+  font-family: mplus-light;
+  src: url('../fonts/mplus-2m-light.ttf')
+       format("truetype");
+}
+@font-face {
+  font-family: mplus-regular;
+  src: url('../fonts/mplus-2m-regular.ttf')
+       format("truetype");
 }
 
