@@ -1,7 +1,6 @@
-// @import url(http://fonts.googleapis.com/css?family=Lato:200|Open+Sans:400,600);
 @import 'palette';
 
-$headerHeight: 70px;
+$headerHeight: 100px;
 
 body {
   font-family: "mplus-light", sans-serif;
@@ -155,6 +154,20 @@ header {
   }
   #side li:active a {
     text-decoration: none;
+  }
+
+#plates {}
+  #plates .item a {
+    display: block;
+  }
+  #plates .item a:hover {
+    // background-color: $collection-item-hover;
+  }
+  #plates .thumb {
+    float: left;
+    height: 60px;
+    width: 60px;
+    margin: 0 1rem;
   }
 
 @media (min-width: 642px) {
