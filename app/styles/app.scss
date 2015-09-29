@@ -157,11 +157,20 @@ header {
   }
 
 #plates {}
-  #plates .item a {
-    display: block;
+  #plates .item {
+    height: 50px;
+    padding-bottom: 0;
+    margin-bottom: 1.25rem;
   }
-  #plates .item a:hover {
-    // background-color: $collection-item-hover;
+  #plates .item.active {
+    width: 100%;
+    height: 200px;
+  }
+  #plates .item:hover {
+    // border: 1px solid $collection-item-hover;
+  }
+  #plates .item .header {
+    cursor: pointer;
   }
   #plates .thumb {
     float: left;
