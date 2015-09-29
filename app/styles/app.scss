@@ -157,9 +157,11 @@ header {
     text-decoration: none;
   }
 
-#plates {}
 @media (min-width: 642px) {
   // only layer plates on medium - large screens
+  #plates {
+    overflow: hidden;
+  }
   .plate {
     position: absolute;
     top: 0;
@@ -170,6 +172,7 @@ header {
   .plate.active {
     opacity: 1;
     z-index: 1;
+    overflow: scroll;
   }
 }
 
