@@ -15,49 +15,49 @@ module.exports = Backbone.Model.extend({
         url: 'rdc.moabi.org',
         github: 'https://github.com/crowdcover',
         description: 'An open-source geodata management platform based on OpenStreetMap for forest monitoring in the Congo Rainforest.',
-        img: '',
+        img: 'moabi.png',
       },
       {
         title: 'OSM Logging Roads',
         url: 'loggingroads.org',
         github: 'https://github.com/crowdcover/logging-roads',
         description: 'A crowdsourced forest monitoring platform.  Mapped over 3000 km of logging roads, identifying instances of illegal logging.  OSM Logging Roads is currently shortlisted as one of 3 finalists for the Eye on Earth Data Innovation Showcase.',
-        img: '',
+        img: 'loggingroads.png',
       },
       {
         title: 'CongoMines',
         url: 'http://congomines.org',
         github: 'https://github.com/crowdcover/congo-mines-app',
         description: "The Carter Center's CongoMines platform collects and analyzes data on mining activities in the Democratic Republic of the Congo.  For this project, we rebuilt their web site and database from the ground up using Ruby on Rails.",
-        img: '',
+        img: 'congomines_vi.png',
       },
       {
         title: 'Open Media Dashboard',
         url: null,
         github: 'https://github.com/media-dashboard',
         description: 'A set of visualization tools and server infrastructure to analyze media event datasets from the GDELT, Phoenix and ACLED projects.',
-        img: '',
+        img: 'gdelt_dashboard.png',
       },
       {
         title: 'Extractives and Fragile States',
         url: 'http://extractivesfragilestates.github.io/ExtractivesFragileStates/countries/drc/',
         github: 'https://github.com/ExtractivesFragileStates',
         description: "Multi-country map visualization project for the World Bank's Global Center on Conflict, Security and Development (GCCSD).",
-        img: '',
+        img: 'extractives_fragile_states.png',
       },
       {
         title: "Mapping China's Dam Rush",
         url: 'https://www.wilsoncenter.org/publication/interactive-mapping-chinas-dam-rush',
         github: 'https://github.com/jameslaneconkling/china_hydro',
         description: "Led web development, design, cartography, and data analysis on a microsite exploring the Chinese government's development plans for hydropower in the Himalayas.",
-        img: '',
+        img: 'himalaya_dams.png',
       },
       {
         title: "China's West-East Energy Transfer",
         url: 'https://www.wilsoncenter.org/publication/map-chinas-west-east-electricity-transfer-project',
         github: null,
         description: "Led front end web development, web design, data analysis, cartography, and print layout design.  Versions of the project were published in two publications, 'New Security Beat' and 'China Environmental Series', and republished widely.",
-        img: '',
+        img: 'china_energy_ii.png',
       }
     ]);
 
@@ -160,7 +160,7 @@ module.exports = Backbone.Model.extend({
         title: "China's East-West Energy Transfer",
         url: 'www.com',
         description: null,
-        img: 'china_energy_static_iv.png',
+        img: 'china_energy_static_iv.jpg',
         print: true
       },
       {
@@ -183,7 +183,14 @@ module.exports = Backbone.Model.extend({
         description: null,
         img: 'madagascar.png',
         print: false
-      }
+      },
+      {
+        title: 'Himalaya Terrain',
+        url: 'www.com',
+        description: null,
+        img: 'himalaya_terrain_iii.png',
+        print: false
+      },
     ]);
   }
 
