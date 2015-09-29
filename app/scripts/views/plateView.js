@@ -15,7 +15,7 @@ module.exports = Backbone.View.extend({
     this.listenTo(this.model, 'change:collection', this.makePlateActive);
 
     // bind events via jquery [useful if the callback's context should be set to the element, rather than the view]
-    this.$el.on('click', 'li.item .header', this.toggleCollectionItemActive);
+    this.$el.on('click', 'li.item h3', this.toggleCollectionItemActive);
   },
 
   template: require('../templates/plate.hbs'),
@@ -28,7 +28,7 @@ module.exports = Backbone.View.extend({
   toggleCollectionItemActive: function(e){
     e.preventDefault();
     e.stopPropagation();
-    var $collectionItem = $(this).parent('.item');
+    var $collectionItem = $(this).parents('.item');
 
     if( $collectionItem.hasClass('active') ){
       $collectionItem.removeClass('active');
