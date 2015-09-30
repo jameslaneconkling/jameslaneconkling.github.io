@@ -1,81 +1,42 @@
----
-layout: main
-title:
-description:
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>James Conkling</title>
+  <meta name="description" content="">
+  <meta name="description" content="My thoughts on maps, code, and the spaces between" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="keywords" content=", cartography, geography, web development, code" />
+  <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
 
-webmaps:
-  - name: Imhof
-    url: https://api.tiles.mapbox.com/v4/james-lane-conkling.84217059/page.html?access_token=pk.eyJ1IjoiamFtZXMtbGFuZS1jb25rbGluZyIsImEiOiJ3RHBOc1BZIn0.edCFqVis7qgHPRgdq0WYsA#11/30.1027/81.2645
-  - name: Hypsometric
-    url: https://api.tiles.mapbox.com/v4/james-lane-conkling.e78b500f/page.html?access_token=pk.eyJ1IjoiamFtZXMtbGFuZS1jb25rbGluZyIsImEiOiJ3RHBOc1BZIn0.edCFqVis7qgHPRgdq0WYsA#10/27.6872/87.9648
-  - name: Base Map, Dim
-    url: https://api.tiles.mapbox.com/v4/james-lane-conkling.5630f970/page.html?access_token=pk.eyJ1IjoiamFtZXMtbGFuZS1jb25rbGluZyIsImEiOiJ3RHBOc1BZIn0.edCFqVis7qgHPRgdq0WYsA#8/36.315/37.029
-  - name: Base Map, Bright
-    url: https://api.tiles.mapbox.com/v4/james-lane-conkling.natural-earth/page.html?access_token=pk.eyJ1IjoiamFtZXMtbGFuZS1jb25rbGluZyIsImEiOiJ3RHBOc1BZIn0.edCFqVis7qgHPRgdq0WYsA#6/11.278/34.299
-  - name: NOLA Hydrography
-    url: https://api.tiles.mapbox.com/v4/james-lane-conkling.NOLADim/page.html?access_token=pk.eyJ1IjoiamFtZXMtbGFuZS1jb25rbGluZyIsImEiOiJ3RHBOc1BZIn0.edCFqVis7qgHPRgdq0WYsA#12/29.8359/-89.9829
-  - name: Zanzibar Population
-    url: https://api.tiles.mapbox.com/v4/james-lane-conkling.worldpop_zanzibar/page.html?access_token=pk.eyJ1IjoiamFtZXMtbGFuZS1jb25rbGluZyIsImEiOiJ3RHBOc1BZIn0.edCFqVis7qgHPRgdq0WYsA#10/-6.0771/39.5920
-  - name: Landscan
-    url: https://a.tiles.mapbox.com/v3/helsinki.h5550eo0/page.html?secure=1#7/25.528/475.851
-  - name: SF Slim
-    url: https://api.tiles.mapbox.com/v4/james-lane-conkling.sf_slim/page.html?access_token=pk.eyJ1IjoiamFtZXMtbGFuZS1jb25rbGluZyIsImEiOiJ3RHBOc1BZIn0.edCFqVis7qgHPRgdq0WYsA#13/37.7713/-122.4244
-  - name: Penobscot
-    url: https://api.tiles.mapbox.com/v4/james-lane-conkling.penobscot/page.html?access_token=pk.eyJ1IjoiamFtZXMtbGFuZS1jb25rbGluZyIsImEiOiJ3RHBOc1BZIn0.edCFqVis7qgHPRgdq0WYsA#11/44.0370/-68.8293
-  - name: DOT Night
-    url: https://api.tiles.mapbox.com/v4/james-lane-conkling.trial42/page.html?access_token=pk.eyJ1IjoiamFtZXMtbGFuZS1jb25rbGluZyIsImEiOiJ3RHBOc1BZIn0.edCFqVis7qgHPRgdq0WYsA#5/38.117/-85.649
-  - name: Fresh Water
-    url: https://api.tiles.mapbox.com/v4/james-lane-conkling.fresh_water/page.html?access_token=pk.eyJ1IjoiamFtZXMtbGFuZS1jb25rbGluZyIsImEiOiJ3RHBOc1BZIn0.edCFqVis7qgHPRgdq0WYsA#5/30.468/117.466
+  <link rel="stylesheet" href="styles/foundation.min.css">
+  <link rel="stylesheet" href="styles/app.css">
 
-printmaps:
-  - name: Electricity on the Move
-    url: https://dl.dropboxusercontent.com/u/49790262/china_energy_static_iv.jpg
-  - name: Dymaxion Map
-    url: https://dl.dropboxusercontent.com/u/49790262/jlc_dymaxion_submit.jpg
-  - name: Kibera Schools
-    url: https://dl.dropboxusercontent.com/u/49790262/kibera_schools_a1_v4.pdf
+  <!-- Open Graph: https://developers.facebook.com/docs/opengraph/howtos/maximizing-distribution-media-content/
+  Twitter: https://dev.twitter.com/docs/cards/types/summary-card
+  ============================== -->
+  <meta property="og:title" content="James Conkling"/>
+  <meta property="og:site_name" content=" - James Conkling"/>
+  <meta property="og:url" content=" - jameslaneconkling.github.io"/>
+  <meta property="og:description" content="My thoughts on maps, code, and the spaces between"/>
+  <meta property="og:image" content=""/>
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="@jamesconkling">
+  <meta name="twitter:title" content="">
+  <meta name="twitter:description" content="My thoughts on maps, code, and the spaces between">
+  <meta name="twitter:image" content="">
+</head>
+<body>
 
-websites:
-  - name: Moabi
-    url: rdc.moabi.org
-  - name: Extractives and Fragile States [prototype]
-    url: http://extractivesfragilestates.github.io/ExtractivesFragileStates/countries/afghanistan/
-  - name: China Hydropower
-    url: https://dl.dropboxusercontent.com/u/49790262/wwc_site/index.html
-  - name: GDELT dashboard [prototype]
-    url: http://jameslaneconkling.github.io/gdelt-dashboard/
-  - name: YouTube GeoSearch [prototype]
-    url: http://jameslaneconkling.github.io/geoQuery/
----
-<div class="row">
-	<div class="medium-12 column">
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    ga('create', 'UA-58936860-1', 'auto');
+    ga('send', 'pageview');
+  </script>
 
-    <p>I am a front-end web developer <em>by-way-of</em> web design <em>by-way-of</em> web cartography <em>by-way-of</em> geography.  I came to programming after I realized that that was where all the fun stuff was happening.</p>
-
-    <p>After getting sick of throwing around dropbox links, and maintaining multiple CV-style collections of my work, I decided to create this simple, small website.  Given more time I would have made it even smaller.</p>
-
-    <h3>Web Maps</h3>
-    <ul>
-      {% for webmap in page.webmaps %}
-        <li><a href="{{webmap.url}}">{{webmap.name}}</a></li>
-      {% endfor %}
-    </ul>
-
-    <h3>Print Maps</h3>
-    <ul>
-      {% for pmap in page.printmaps %}
-        <li><a href="{{pmap.url}}">{{pmap.name}}</a></li>
-      {% endfor %}
-    </ul>
-
-    <h3>Websites</h3>
-    <ul>
-      {% for site in page.websites %}
-        <li><a href="{{site.url}}">{{site.name}}</a></li>
-      {% endfor %}
-    </ul>
-
-    <p class="quiet mvl"><small>This site is built on jekyll and foundation.  Find the code on <a href="https://github.com/jameslaneconkling/jameslaneconkling.github.io"><i class="fa fa-github"></i> github</a>.  <em>Cheers to <strong>@daigofuji</strong> for <a href="https://github.com/daigofuji/jekyll-foundation-5-starter/tree/gh-pages">jekyll-foundation-5-starter</a></em>.</small></p>
-
-	</div>
-</div>
+  <script src="scripts/main.js"></script>
+</body>
+</html>
