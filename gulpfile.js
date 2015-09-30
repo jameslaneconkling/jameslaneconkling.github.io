@@ -129,8 +129,9 @@ gulp.task('serve', function(){
 });
 
 gulp.task('gh-pages', function(){
+  // deploy to master [expected branch for gh user page]
   return gulp.src('./build/**/*')
-    .pipe(ghPages());
+    .pipe(ghPages({ branch: 'master' }));
 });
 
 /****************************************************/
