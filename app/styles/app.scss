@@ -1,0 +1,251 @@
+@import 'palette';
+
+$headerHeight: 100px;
+$iconWidth: 50px;
+
+body {
+  font-family: "mplus-regular", sans-serif;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: $bg;
+  letter-spacing: 1px;
+  box-sizing: border-box;
+}
+
+
+/*******************/
+/* Helpers */
+/*******************/
+.v-align-center {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.v-height-full {
+  height: 100%;
+}
+.animate {
+  transition: all 0.3s;
+}
+.keyline-left { border-left: 1px solid $quiet; }
+.keyline-right { border-right: 1px solid $quiet; }
+.keyline-top { border-top: 1px solid $quiet; }
+.keyline-bottom { border-bottom: 1px solid $quiet; }
+.keyline-all { border: 1px solid $quiet; }
+
+
+/*******************/
+/* Inline Elements */
+/*******************/
+a {
+  text-decoration: none;
+  color: $link;
+  }
+  a:hover {
+    color: $link-hover;
+    text-decoration: underline;
+  }
+  a:focus {
+    color: $link;
+  }
+
+.quiet { color: $quiet; }
+
+small { font-size: 0.6rem; }
+
+
+/*******************/
+/* Block Elements */
+/*******************/
+h1,h2,h3 {
+  font-family: "mplus-light", sans-serif;
+}
+
+h1,h2 { letter-spacing: 4px; }
+h1 { font-size: 3rem; }
+h2 { font-size: 1.6rem; }
+h3 { font-size: 1rem; }
+
+p {
+  font-family: "mplus-regular", sans-serif;
+  font-size: 0.8rem;
+  // text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.3);
+}
+
+
+/***************/
+/* Project CSS */
+/***************/
+#app {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+header {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  // border-bottom: 1px solid #AAA;
+  }
+  header .columns {
+    height: $headerHeight;
+  }
+  header .title h2 {
+    font-size: 1rem;
+    // text-transform: uppercase;
+  }
+  header .menu li {
+    float: left;
+    padding-left:12px;
+  }
+  header .menu li a {
+    // vertical-align: middle;
+    // display: table-cell;
+  }
+  // THIS MIGHT BE WORTH PLAYING AROUND WITH
+  // header .menu li span {
+  //   display: none;
+  // }
+  // header .menu li:hover span {
+  //   display: none;
+  // }
+
+#side,
+#plates {
+  position: absolute;
+  top: $headerHeight;
+  bottom: 0;
+  overflow: scroll;
+}
+
+#side {
+  // left: 0;
+  // width: 30%;
+  }
+  #side ul {
+    list-style: none;
+    margin-left: 0;
+    margin-right: 0.4rem;
+    margin-bottom: 0;
+  }
+  #side h1 {
+    text-transform: uppercase;
+    font-size: 3rem;
+    line-height: 3rem;
+    // won't work w/o calculated #side width
+    text-overflow: clip;
+    text-overflow: ellipsis;
+    text-overflow: "…";
+  }
+  #side li.title {
+    padding-bottom: 3rem;
+  }
+  #plates h1.title {
+    padding-bottom: 0.8rem;
+  }
+  #side li:last-child {
+    padding-bottom: 0;
+  }
+  #side li.active a {
+    text-decoration: underline;
+  }
+  #side li:active a {
+    text-decoration: none;
+  }
+
+#plates {
+  overflow: hidden;
+  }
+  .plate {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    opacity: 0;
+  }
+  .plate.active {
+    opacity: 1;
+    z-index: 1;
+    overflow: scroll;
+  }
+  #plates .item {
+    // height: 50px;
+    padding-bottom: 0;
+    margin-bottom: 1.25rem;
+  }
+  #plates .item.active {
+    width: 100%;
+    // height: 200px;
+  }
+  .item .thumb {
+    float: left;
+    height: $iconWidth;
+    width: $iconWidth;
+    background-size: $iconWidth $iconWidth;
+    background-repeat: no-repeat;
+    margin-right: 1rem;
+    border: 1px solid #BBB;
+  }
+  .item h3 {
+    cursor: pointer;
+    height: $iconWidth;
+    margin-left: $iconWidth + 2px;
+  }
+  .item h3:hover,
+  .item.active h3 {
+    background-color: #EAEAEA;
+  }
+  .item article {
+    // display: none;
+    opacity: 0; // doesn't work
+    height: 0;
+    overflow: hidden;
+    margin-left: $iconWidth;
+    padding: 0 1rem;
+  }
+  .item.active article {
+    // position: absolute;
+    // display: block;
+    height: 200px;
+    overflow: scroll;
+    opacity: 1;
+  }
+  .item p {
+    color: #555;
+  }
+
+
+/*******************/
+/* Responsive Design */
+/*******************/
+@media (max-width: 642px) {
+  // only layer plates on medium - large screens
+  #plates {
+    overflow: auto;
+  }
+  .plate {
+    position: static;
+    opacity: 1;
+  }
+}
+
+
+/*******************/
+/* Fonts */
+/*******************/
+@font-face {
+  font-family: mplus-light;
+  src: url('../fonts/mplus-2m-light.ttf')
+       format("truetype");
+}
+@font-face {
+  font-family: mplus-regular;
+  src: url('../fonts/mplus-2m-regular.ttf')
+       format("truetype");
+}
+

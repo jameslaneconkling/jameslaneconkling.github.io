@@ -1,0 +1,16 @@
+<div id="{{name}}-plate" class="plate animate">
+  <h1 class="title show-for-small-only">{{name}}</h1>
+  <ul class="no-bullet small-block-grid-1 large-block-grid-2">
+    {{#each items}}
+      <li class="item animate clearfix">
+        <div class="header">
+          <div class="thumb" style="background-image: url('images/thumb/{{this.img}}')" title="{{this.title}}"></div>
+          <h3 class="animate">{{this.title}}</h3>
+        </div>
+        <article class="animate">
+          <p>{{this.description}}</p>
+        </article>
+      </li>
+    {{/each}}
+  </ul>
+</div>
