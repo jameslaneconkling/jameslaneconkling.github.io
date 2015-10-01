@@ -226,7 +226,7 @@ header {
 @media (max-width: 642px) {
   // only layer plates on medium - large screens
   #plates {
-    overflow: auto;
+    overflow: visible;
   }
   .plate {
     position: static;
