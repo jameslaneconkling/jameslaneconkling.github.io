@@ -7,15 +7,11 @@ module.exports = Backbone.View.extend({
 
   className: 'columns small-12 medium-8 push-4',
 
-  // events: {
-    // 'click li.item': 'toggleCollectionItemActive'
-  // },
-
   initialize: function (){
     this.listenTo(this.model, 'change:collection', this.makePlateActive);
 
     // bind events via jquery [useful if the callback's context should be set to the element, rather than the view]
-    this.$el.on('click', 'li.item h3', this.toggleCollectionItemActive);
+    this.$el.on('click', 'li.item.descriptioned h3', this.toggleCollectionItemActive);
   },
 
   template: require('../templates/plate.hbs'),

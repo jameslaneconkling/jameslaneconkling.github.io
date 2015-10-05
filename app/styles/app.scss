@@ -219,6 +219,26 @@ header {
   .item p {
     color: #555;
   }
+  .item .details {
+    margin-right: 0;
+    margin-bottom: 0.6rem;
+  }
+  .item .details > li:before {
+    display: inline-block;
+    content: "-";
+    width: 1rem;
+    margin-left: -1rem;
+  }
+  .item .details a {
+    font-size: 0.8rem;
+    color: #aaa;
+    text-decoration: underline;
+    // TODO don't allow to flow to two lines
+    word-wrap: break;
+  }
+  .item .details a:hover {
+    color: $text;
+  }
 
 
 /*******************/

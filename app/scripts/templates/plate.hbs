@@ -2,14 +2,20 @@
   <h1 class="title show-for-small-only">{{name}}</h1>
   <ul class="no-bullet small-block-grid-1 large-block-grid-2">
     {{#each items}}
-      <li class="item animate clearfix">
+      <li class="item animate clearfix {{#if this.description}}descriptioned{{/if}}">
         <div class="header">
           <div class="thumb" style="background-image: url('images/thumb/{{this.img}}')" title="{{this.title}}"></div>
           <h3 class="animate">{{this.title}}</h3>
         </div>
+        {{#if this.description}}
         <article class="animate">
-          <p>{{this.description}}</p>
+          <ul class="details">
+            {{#if this.url}}<li><a href="http://{{this.url}}" target="_blank">{{this.url}}</a></li>{{/if}}
+            {{#if this.github}}<li><a href="http://{{this.github}}" target="_blank">{{this.github}}</a></li>{{/if}}
+          </ul>
+          <p>{{{this.description}}}</p>
         </article>
+        {{/if}}
       </li>
     {{/each}}
   </ul>
