@@ -40,12 +40,12 @@ body {
 /* Inline Elements */
 /*******************/
 a {
-  text-decoration: none;
+  text-decoration: underline;
   color: $link;
   }
   a:hover {
     color: $link-hover;
-    text-decoration: underline;
+    text-decoration: none;
   }
   a:focus {
     color: $link;
@@ -105,8 +105,10 @@ header {
     padding-left:12px;
   }
   header .menu li a {
-    // vertical-align: middle;
-    // display: table-cell;
+    text-decoration: none;
+  }
+  header .menu li a:hover {
+    text-decoration: underline;
   }
   // THIS MIGHT BE WORTH PLAYING AROUND WITH
   // header .menu li span {
@@ -156,6 +158,10 @@ header {
   #side li:last-child {
     padding-bottom: 0;
   }
+  #side li a {
+    text-decoration: none;
+  }
+  #side li:hover a,
   #side li.active a {
     text-decoration: underline;
   }
@@ -236,7 +242,7 @@ header {
   .item .details a {
     font-size: 0.8rem;
     color: #aaa;
-    text-decoration: underline;
+    text-decoration: none;
     // TODO don't allow to flow to two lines
     word-wrap: break;
   }
