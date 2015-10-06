@@ -99,6 +99,9 @@ gulp.task('move', function(){
   gulp.src('./app/fonts/*.ttf')
     .pipe(gulp.dest('./build/fonts'));
 
+  gulp.src('./app/assets/*.*')
+    .pipe(gulp.dest('./build/assets'));
+
 });
 
 /****************************************************/
