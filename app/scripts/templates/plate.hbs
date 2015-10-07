@@ -9,9 +9,9 @@
         </div>
         {{#if this.description}}
         <article class="animate">
-          <ul class="details">
-            {{#if this.url}}<li><a href="http://{{this.url}}" target="_blank">{{this.url}}</a></li>{{/if}}
-            {{#if this.github}}<li><a href="http://{{this.github}}" target="_blank">{{this.github}}</a></li>{{/if}}
+          <ul class="details inline-list">
+            {{#if this.url}}<li><a href="http://{{this.url}}" target="_blank"><i class="fa fa-file"></i>website</a></li>{{/if}}
+            {{#if this.github}}<li><a href="http://{{this.github}}" target="_blank"><i class="fa fa-github"></i>github</a></li>{{/if}}
           </ul>
           <p>{{{this.description}}}</p>
         </article>
