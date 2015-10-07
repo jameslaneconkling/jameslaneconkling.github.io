@@ -95,35 +95,35 @@ module.exports = Backbone.Model.extend({
     this.set('cartography', [
       {
         title: "Imhof",
-        url: "https://api.mapbox.com/v4/james-lane-conkling.84217059/page.html?access_token=pk.eyJ1IjoiamFtZXMtbGFuZS1jb25rbGluZyIsImEiOiJ3RHBOc1BZIn0.edCFqVis7qgHPRgdq0WYsA#11/30.2448/81.2377",
+        url: "api.mapbox.com/v4/james-lane-conkling.84217059/page.html?access_token=pk.eyJ1IjoiamFtZXMtbGFuZS1jb25rbGluZyIsImEiOiJ3RHBOc1BZIn0.edCFqVis7qgHPRgdq0WYsA#11/30.2448/81.2377",
         description: "A light-weight topography map inspired by <a href='https://en.wikipedia.org/wiki/Eduard_Imhof'>Eduard Imhof</a>.",
         img: "imhof.png",
         print: false
       },
       {
         title: "Hypsometric",
-        url: "https://api.mapbox.com/v4/james-lane-conkling.e78b500f/page.html?access_token=pk.eyJ1IjoiamFtZXMtbGFuZS1jb25rbGluZyIsImEiOiJ3RHBOc1BZIn0.edCFqVis7qgHPRgdq0WYsA#10/27.6872/87.9648",
+        url: "api.mapbox.com/v4/james-lane-conkling.e78b500f/page.html?access_token=pk.eyJ1IjoiamFtZXMtbGFuZS1jb25rbGluZyIsImEiOiJ3RHBOc1BZIn0.edCFqVis7qgHPRgdq0WYsA#10/27.6872/87.9648",
         description: "A study of color ramps for terrain-based <a href='https://en.wikipedia.org/wiki/Hypsometric_tints'>hypsometric</a> gradients.",
         img: "hypsometric.png",
         print: false
       },
       {
         title: "Base Map | Light",
-        url: "https://api.mapbox.com/v4/james-lane-conkling.5630f970/page.html?access_token=pk.eyJ1IjoiamFtZXMtbGFuZS1jb25rbGluZyIsImEiOiJ3RHBOc1BZIn0.edCFqVis7qgHPRgdq0WYsA#8/35.568/38.035",
+        url: "api.mapbox.com/v4/james-lane-conkling.5630f970/page.html?access_token=pk.eyJ1IjoiamFtZXMtbGFuZS1jb25rbGluZyIsImEiOiJ3RHBOc1BZIn0.edCFqVis7qgHPRgdq0WYsA#8/35.568/38.035",
         description: "A minimal, mostly grayscale basemap useful as a background for data visualizations.",
         img: "base_light.png",
         print: false
       },
       {
         title: "Base Map | Dark",
-        url: "https://api.mapbox.com/v4/james-lane-conkling.natural-earth/page.html?access_token=pk.eyJ1IjoiamFtZXMtbGFuZS1jb25rbGluZyIsImEiOiJ3RHBOc1BZIn0.edCFqVis7qgHPRgdq0WYsA#6/11.278/34.299",
+        url: "api.mapbox.com/v4/james-lane-conkling.natural-earth/page.html?access_token=pk.eyJ1IjoiamFtZXMtbGFuZS1jb25rbGluZyIsImEiOiJ3RHBOc1BZIn0.edCFqVis7qgHPRgdq0WYsA#6/11.278/34.299",
         description: "A colored basemap using <em>Natural Earth's</em> hypsometric and shaded relief layers.  Originally designed for project for <em>Amnesty International</em> on conflict in the the Horn of Africa.",
         img: "base_dark.png",
         print: false
       },
       {
         title: "Evening",
-        url: "https://api.mapbox.com/v4/james-lane-conkling.ed2b8c3b/page.html?access_token=pk.eyJ1IjoiamFtZXMtbGFuZS1jb25rbGluZyIsImEiOiJ3RHBOc1BZIn0.edCFqVis7qgHPRgdq0WYsA#11/36.4174/44.9506",
+        url: "api.mapbox.com/v4/james-lane-conkling.ed2b8c3b/page.html?access_token=pk.eyJ1IjoiamFtZXMtbGFuZS1jb25rbGluZyIsImEiOiJ3RHBOc1BZIn0.edCFqVis7qgHPRgdq0WYsA#11/36.4174/44.9506",
         description: "A terrain basemap using a orange-to-purple gradient.  Colors were inspired in part by the French artist and comic book illustrator <a href='https://en.wikipedia.org/wiki/Jean_Giraud'>Jean Giraud</a> (aka Moebius).",
         img: "evening.png",
         print: false
@@ -137,70 +137,70 @@ module.exports = Backbone.Model.extend({
       },
       {
         title: "Dymaxion",
-        url: "https://dl.dropboxusercontent.com/u/49790262/jlc_dymaxion_submit.jpg",
+        url: "dl.dropboxusercontent.com/u/49790262/jlc_dymaxion_submit.jpg",
         description: "A sharp reimagening of <em>Buckminster Fuller's</em> famous <a href='https://en.wikipedia.org/wiki/Dymaxion_map'>Dymaxion Map</a>.  Given the useful preservation of shape and area of the dymaxion map, the map's triangular graticules give approximate estimates of distance.",
         img: "dymaxion.png",
         print: true
       },
       {
         title: "Hydrography",
-        url: "https://api.mapbox.com/v4/james-lane-conkling.NOLADim/page.html?access_token=pk.eyJ1IjoiamFtZXMtbGFuZS1jb25rbGluZyIsImEiOiJ3RHBOc1BZIn0.edCFqVis7qgHPRgdq0WYsA#12/29.8359/-89.9829",
+        url: "api.mapbox.com/v4/james-lane-conkling.NOLADim/page.html?access_token=pk.eyJ1IjoiamFtZXMtbGFuZS1jb25rbGluZyIsImEiOiJ3RHBOc1BZIn0.edCFqVis7qgHPRgdq0WYsA#12/29.8359/-89.9829",
         description: "An elevation map of <em>New Orleans</em> showing land above and below sea level.",
         img: "hydrography.png",
         print: false
       },
       {
         title: "Kibera",
-        url: "https://dl.dropboxusercontent.com/u/49790262/kibera_schools_a1_v4.pdf",
+        url: "dl.dropboxusercontent.com/u/49790262/kibera_schools_a1_v4.pdf",
         description: "A print map showing all schools, both public and informal, in Nairobi's Kibera slum and surrounding neighborhoods.  The map was produced with the <a href='http://groundtruth.in/'>GroundTruth Initiative</a> for the <a href='http://openschoolskenya.org/'>Open Schools Kenya</a> project.  A copy of this map was distributed to local schools and municipal and national officials.",
         img: "kibera.png",
         print: true
       },
       {
         title: "Rivers",
-        url: "https://api.mapbox.com/v4/james-lane-conkling.fresh_water/page.html?access_token=pk.eyJ1IjoiamFtZXMtbGFuZS1jb25rbGluZyIsImEiOiJ3RHBOc1BZIn0.edCFqVis7qgHPRgdq0WYsA#5/27.176/103.535",
+        url: "api.mapbox.com/v4/james-lane-conkling.fresh_water/page.html?access_token=pk.eyJ1IjoiamFtZXMtbGFuZS1jb25rbGluZyIsImEiOiJ3RHBOc1BZIn0.edCFqVis7qgHPRgdq0WYsA#5/27.176/103.535",
         description: "A cartographic visualization of the world's watersheds, with data from <a href='http://hydrosheds.cr.usgs.gov/index.php'>HydroSHEDS</a>, by the <em>USGS</em> and <em>World Wildlife Federation</em>.",
         img: "rivers.png",
         print: false
       },
       {
         title: "San Francisco",
-        url: "https://api.mapbox.com/v4/james-lane-conkling.sf_slim/page.html?access_token=pk.eyJ1IjoiamFtZXMtbGFuZS1jb25rbGluZyIsImEiOiJ3RHBOc1BZIn0.edCFqVis7qgHPRgdq0WYsA#14/37.7680/-122.4266",
+        url: "api.mapbox.com/v4/james-lane-conkling.sf_slim/page.html?access_token=pk.eyJ1IjoiamFtZXMtbGFuZS1jb25rbGluZyIsImEiOiJ3RHBOc1BZIn0.edCFqVis7qgHPRgdq0WYsA#14/37.7680/-122.4266",
         description: "A desaturated cartographic view of <em>San Francisco's</em> road network and terrain.",
         img: "san_francisco.png",
         print: false
       },
       {
         title: "China's East-West Energy Transfer",
-        url: "https://dl.dropboxusercontent.com/u/49790262/china_energy_static_iv.jpg",
+        url: "dl.dropboxusercontent.com/u/49790262/china_energy_static_iv.jpg",
         description: "Print map and infographic visualizing the spatial dimensions of China's energy policy.  Published in the <em>Woodrow Wilson Center's</em> <em>China Environmental Series, issue 12, August 2013</em>.",
         img: "china_energy_static_iv.jpg",
         print: true
       },
       {
         title: "Penobscot",
-        url: "https://api.mapbox.com/v4/james-lane-conkling.penobscot/page.html?access_token=pk.eyJ1IjoiamFtZXMtbGFuZS1jb25rbGluZyIsImEiOiJ3RHBOc1BZIn0.edCFqVis7qgHPRgdq0WYsA#12/44.0374/-68.8583",
+        url: "api.mapbox.com/v4/james-lane-conkling.penobscot/page.html?access_token=pk.eyJ1IjoiamFtZXMtbGFuZS1jb25rbGluZyIsImEiOiJ3RHBOc1BZIn0.edCFqVis7qgHPRgdq0WYsA#12/44.0374/-68.8583",
         description: "Bathymetric contour map of Penobscot Bay.",
         img: "penobscot.png",
         print: false
       },
       {
         title: "Population",
-        url: "https://a.tiles.mapbox.com/v3/helsinki.h5550eo0/page.html?secure=1#7/25.528/475.851",
+        url: "a.tiles.mapbox.com/v3/helsinki.h5550eo0/page.html?secure=1#7/25.528/475.851",
         description: "Map of global population disaggregated to a 1km square grid, using the <a href='http://web.ornl.gov/sci/landscan/'>LandScan</a> dataset from <em>Oak Ridge National Labs</em>.",
         img: "population.png",
         print: false
       },
       {
         title: "Madagascar",
-        url: "https://api.mapbox.com/v4/james-lane-conkling.worldpop_zanzibar/page.html?access_token=pk.eyJ1IjoiamFtZXMtbGFuZS1jb25rbGluZyIsImEiOiJ3RHBOc1BZIn0.edCFqVis7qgHPRgdq0WYsA#11/-5.1518/39.6051",
+        url: "api.mapbox.com/v4/james-lane-conkling.worldpop_zanzibar/page.html?access_token=pk.eyJ1IjoiamFtZXMtbGFuZS1jb25rbGluZyIsImEiOiJ3RHBOc1BZIn0.edCFqVis7qgHPRgdq0WYsA#11/-5.1518/39.6051",
         description: "3D population map of Madagascar and Zanzibar, using the <a href='http://www.worldpop.org.uk/'>World Pop</a> dataset.",
         img: "madagascar.png",
         print: false
       },
       {
         title: "Himalaya Terrain",
-        url: "https://api.mapbox.com/v4/chinaenvforum.map-cvdwgvbn/page.html?access_token=pk.eyJ1IjoiY2hpbmFlbnZmb3J1bSIsImEiOiJfRWVWZ3ZrIn0.FOF0CoaD0HmJjmfORHPMqQ#8/29.238/103.200",
+        url: "api.mapbox.com/v4/chinaenvforum.map-cvdwgvbn/page.html?access_token=pk.eyJ1IjoiY2hpbmFlbnZmb3J1bSIsImEiOiJfRWVWZ3ZrIn0.FOF0CoaD0HmJjmfORHPMqQ#8/29.238/103.200",
         description: "A hypsometric terrain map of the Himilayas, made for a project <em>Woodrow Wilson Center's</em> on <a href='https://dl.dropboxusercontent.com/u/49790262/wwc_site/index.html'>Himalayan hydropower</a>.",
         img: "himalaya_terrain_iii.png",
         print: false
