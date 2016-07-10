@@ -94,6 +94,13 @@ module.exports = Backbone.Model.extend({
 
     this.set('cartography', [
       {
+        title: "Alps",
+        url: "api.mapbox.com/v4/james-lane-conkling.bcfe30ed/page.html?access_token=pk.eyJ1IjoiamFtZXMtbGFuZS1jb25rbGluZyIsImEiOiJ3RHBOc1BZIn0.edCFqVis7qgHPRgdq0WYsA#10/46.7869/10.2722",
+        description: "A more colorful approach to terrain-based cartography, heavily inspired by <a href='https://en.wikipedia.org/wiki/Eduard_Imhof'>Eduard Imhof</a>.",
+        img: "alps.png",
+        print: false
+      },
+      {
         title: "Imhof",
         url: "api.mapbox.com/v4/james-lane-conkling.84217059/page.html?access_token=pk.eyJ1IjoiamFtZXMtbGFuZS1jb25rbGluZyIsImEiOiJ3RHBOc1BZIn0.edCFqVis7qgHPRgdq0WYsA#11/30.2448/81.2377",
         description: "A light-weight topography map inspired by <a href='https://en.wikipedia.org/wiki/Eduard_Imhof'>Eduard Imhof</a>.",
