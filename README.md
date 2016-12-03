@@ -5,7 +5,6 @@ A minimal portfolio site.
 
 ### Setup
 ```
-npm install -g gulp
 npm install
 
 # to generate image thumbnail, install graphics libraries
