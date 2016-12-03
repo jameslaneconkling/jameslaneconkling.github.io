@@ -45,13 +45,13 @@ module.exports = Backbone.Model.extend({
         description: "<em>Deck</em> is a scroll-based, single-page app template, built in <a href='http://backbonejs.org'>Backbone</a>, with a simple, powerful templating scheme and asset pipeline. Navigation is heavily inspired by Mike Bostock's <a href='https://github.com/mbostock/stack'>Stack presentation library</a>.  For a great overview of how to think about scroll navigation, read <a href='http://bost.ocks.org/mike/scroll/'>How to Scroll</a>.<br><br>Look mom, no scroll-jacking!",
         img: "deck.png",
       },
-      {
-        title: "ImFree | Social Vending Machine of the Future",
-        url: null,
-        github: "github.com/ImFreeApp",
-        description: "<em>ImFree | Social Vending Machine of the Future</em> is mobile and web-based app with a highly scalable back end to detect latent communities-of-interest based on a user’s social media footprints.  The web client is built in Backbone, with Express and Flask-based back end services.",
-        img: "code_ii.png",
-      },
+      // {
+      //   title: "ImFree | Social Vending Machine of the Future",
+      //   url: null,
+      //   github: "github.com/ImFreeApp",
+      //   description: "<em>ImFree | Social Vending Machine of the Future</em> is mobile and web-based app with a highly scalable back end to detect latent communities-of-interest based on a user’s social media footprints.  The web client is built in Backbone, with Express and Flask-based back end services.",
+      //   img: "code_ii.png",
+      // },
       {
         title: "Extractives and Fragile States",
         url: "extractivesfragilestates.github.io/ExtractivesFragileStates/countries/drc/",
