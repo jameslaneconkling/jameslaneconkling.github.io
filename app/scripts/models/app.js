@@ -11,6 +11,24 @@ module.exports = Backbone.Model.extend({
     // set portfolio project data
     this.set('projects', [
       {
+        title: "React-Falcor",
+        github: "https://gist.github.com/jameslaneconkling/c74b32c7c8922285d4cadb4a54950115",
+        description: "A simple rxjs-powered Higher Order Component to bind React views to the Falcor graph.",
+        img: "code_ii.png",
+      },
+      {
+        title: "Yard3",
+        github: "https://jameslaneconkling.github.io/yard3/",
+        description: "Yet Another React D3 bindings library: a React-D3 graph visualization library emphasizing composability and extensibility.",
+        img: "code_ii.png",
+      },
+      {
+        title: "Rivium",
+        url: "http://rivium.io/",
+        description: "Rivium is a data discovery platform for analyzing large, loosely structured data sets.  The application is leverages the RDF semantic web data model, and is built out across a number of backend Spring Boot microservices.  The client-server communication is handled by Falcor, while the client architecture leans heavily on RxJS and React/Redux.",
+        img: "rivium_iii.png",
+      },
+      {
         title: "Moabi DRC",
         url: "rdc.moabi.org",
         github: "github.com/crowdcover",
@@ -21,7 +39,7 @@ module.exports = Backbone.Model.extend({
         title: "OSM Logging Roads",
         url: "loggingroads.org",
         github: "github.com/crowdcover/logging-roads",
-        description: "As a partnership between <a href='http://moabi.org'>Moabi</a> and the <a href='http://www.wri.org'>World Resource Institute</a>, <em>OpenStreetMap Logging Roads</em> is a crowdsourced forest monitoring platform to track the growth of logging roads in the Congo Basin.  Built on top of custom redeployments of the <a href=''>OSM iD Editor</a> and the <a href=''>HOT Tasking Manager</a> and uploading all analyzed geo data directly to OpenStreetMap, the platform compared known areas of logging activity with 14 years of LandSat imagery, allowing contributors to map the spread of logging roads by year.<br><br>To date, the project has mapped over 3000 km of logging roads, and in certain areas detected instances of illegal logging.  OSM Logging Roads is currently shortlisted as one of 3 finalists for the <a href='http://www.eoesummit.org/challenges/data-innovation/winners/'>Eye on Earth Data Innovation Showcase</a>.",
+        description: "As a partnership between <a href='http://moabi.org'>Moabi</a> and the <a href='http://www.wri.org'>World Resource Institute</a>, <em>OpenStreetMap Logging Roads</em> is a crowdsourced forest monitoring platform to track the growth of logging roads in the Congo Basin.  Built on top of custom redeployments of the <a href=''>OSM iD Editor</a> and the <a href=''>HOT Tasking Manager</a> and uploading all analyzed geo data directly to OpenStreetMap, the platform compared known areas of logging activity with 14 years of LandSat imagery, allowing contributors to map the spread of logging roads by year.<br><br>To date, the project has mapped over 3000 km of logging roads, and in certain areas detected instances of illegal logging.  OSM Logging Roads was the winner of the <a href='http://www.eoesummit.org/challenges/data-innovation/winners/'>Eye on Earth Data Innovation Showcase</a>.",
         img: "loggingroads.png",
       },
       {
@@ -93,6 +111,13 @@ module.exports = Backbone.Model.extend({
     // ]);
 
     this.set('cartography', [
+      {
+        title: "Via Dinerica",
+        url: "api.mapbox.com/styles/v1/james-lane-conkling/cj075bfmm006i2rrrylibk0qn.html?access_token=pk.eyJ1IjoiamFtZXMtbGFuZS1jb25rbGluZyIsImEiOiJ3RHBOc1BZIn0.edCFqVis7qgHPRgdq0WYsA#9.17/44.7732/14.8963",
+        description: "Terrain basemap of the Dineric Alps in the Balkans.",
+        img: "dineric.png",
+        print: false
+      },
       {
         title: "Alps",
         url: "api.mapbox.com/v4/james-lane-conkling.bcfe30ed/page.html?access_token=pk.eyJ1IjoiamFtZXMtbGFuZS1jb25rbGluZyIsImEiOiJ3RHBOc1BZIn0.edCFqVis7qgHPRgdq0WYsA#10/46.7869/10.2722",
