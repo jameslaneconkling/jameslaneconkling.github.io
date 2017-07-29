@@ -25,7 +25,7 @@ module.exports = Backbone.Model.extend({
       {
         title: "Rivium",
         url: "http://rivium.io/",
-        description: "Rivium is a data discovery platform for analyzing large, loosely structured data sets.  The application is leverages the RDF semantic web data model, and is built out across a number of backend Spring Boot microservices.  The client-server communication is handled by Falcor, while the client architecture leans heavily on RxJS and React/Redux.",
+        description: "Rivium is a data discovery platform for analyzing large, loosely structured data sets.  The application leverages the RDF semantic web data model, and is built out across a number of backend Spring Boot microservices.  Client side architecture leans heavily on Falcor, RxJS, and React/Redux.",
         img: "rivium_iii.png",
       },
       {
