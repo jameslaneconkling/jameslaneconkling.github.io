@@ -39,10 +39,10 @@ module.exports = Backbone.View.extend({
       items: this.model.get('projects')
     }) );
 
-    this.$el.append( this.template({
-      name: 'code',
-      items: this.model.get('code')
-    }) );
+    // this.$el.append( this.template({
+    //   name: 'code',
+    //   items: this.model.get('code')
+    // }) );
 
     this.$el.append( this.template({
       name: 'cartography',

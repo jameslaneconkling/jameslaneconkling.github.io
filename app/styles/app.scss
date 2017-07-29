@@ -65,8 +65,8 @@ h1,h2,h3 {
   font-family: "mplus-light", sans-serif;
 }
 
-h1,h2 { letter-spacing: 4px; }
-h1 { font-size: 2.8rem; }
+// h1,h2 { letter-spacing: 2px; }
+h1 { font-size: 2rem; }
 h2 { font-size: 1.6rem; }
 h3 { font-size: 1rem; }
 
@@ -129,7 +129,6 @@ header {
   position: absolute;
   top: $headerHeight;
   bottom: 0;
-  overflow: scroll;
 }
 
 #side {
@@ -144,8 +143,8 @@ header {
   }
   #side h1 {
     text-transform: uppercase;
-    font-size: 3rem;
-    line-height: 3rem;
+    font-size: 2.4rem;
+    line-height: 1rem;
     // won't work w/o calculated #side width
     text-overflow: clip;
     text-overflow: ellipsis;
@@ -156,6 +155,7 @@ header {
   }
   #plates h1.title {
     padding-bottom: 0.8rem;
+    text-transform: uppercase;
   }
   #side li:last-child {
     padding-bottom: 0;
@@ -180,11 +180,12 @@ header {
     bottom: 0;
     width: 100%;
     opacity: 0;
+    margin-bottom: 2rem;
   }
   .plate.active {
     opacity: 1;
     z-index: 1;
-    overflow: scroll;
+    overflow: auto;
   }
   #plates .item {
     // height: 50px;
