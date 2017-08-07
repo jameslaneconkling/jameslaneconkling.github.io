@@ -82,17 +82,17 @@ p {
 /* Project CSS */
 /***************/
 #app {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
+  // position: absolute;
+  // top: 0;
+  // bottom: 0;
+  // left: 0;
+  // right: 0;
 }
 
 header {
-  position: absolute;
-  top: 0;
-  width: 100%;
+  // position: absolute;
+  // top: 0;
+  // width: 100%;
   // border-bottom: 1px solid #AAA;
   }
   header .columns {
@@ -126,9 +126,9 @@ header {
 
 #side,
 #plates {
-  position: absolute;
-  top: $headerHeight;
-  bottom: 0;
+  // position: absolute;
+  // top: $headerHeight;
+  // bottom: 0;
 }
 
 #side {
@@ -172,19 +172,22 @@ header {
   }
 
 #plates {
-  overflow: hidden;
+  // overflow: hidden;
   }
   .plate {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    width: 100%;
+    // position: absolute;
+    // top: 0;
+    // bottom: 0;
+    // width: 100%;
+    // margin-bottom: 2rem;
     opacity: 0;
-    margin-bottom: 2rem;
+    height: 0;
+    overflow: hidden;
   }
   .plate.active {
-    opacity: 1;
     z-index: 1;
+    opacity: 1;
+    height: auto;
     overflow: auto;
   }
   #plates .item {
@@ -284,11 +287,12 @@ header {
 @media (max-width: 642px) {
   // only layer plates on medium - large screens
   #plates {
-    overflow: visible;
+    // overflow: visible;
   }
   .plate {
-    position: static;
+    // position: static;
     opacity: 1;
+    overflow: visible;
   }
 }
 

@@ -5,7 +5,7 @@ var $ = require('jquery');
 module.exports = Backbone.View.extend({
   id: 'plates',
 
-  className: 'columns small-12 medium-8 push-4',
+  className: 'columns small-12 medium-8',
 
   initialize: function (){
     this.listenTo(this.model, 'change:collection', this.makePlateActive);
