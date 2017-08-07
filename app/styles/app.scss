@@ -226,7 +226,7 @@ header {
     // position: absolute;
     // display: block;
     height: 200px;
-    overflow: scroll;
+    overflow: auto;
     opacity: 1;
   }
   .item p {
@@ -253,6 +253,28 @@ header {
   }
   .item .details a:hover {
     text-decoration: underline;
+  }
+
+
+// .scroll-styled {
+//   overflow:auto;
+//   }
+*::-webkit-scrollbar {
+  width:8px;
+  height:8px;
+  border-left:0;
+  background:rgba(255,255,255,0.1);
+  border-radius:0;
+  }
+  *::-webkit-scrollbar:hover {
+    background:rgba(255,255,255,0.15);
+  }
+  *::-webkit-scrollbar-track {
+    background:none;
+  }
+  *::-webkit-scrollbar-thumb {
+    background:rgba(255,255,255,0.1);
+    border-radius:0;
   }
 
 
