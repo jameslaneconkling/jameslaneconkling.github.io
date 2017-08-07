@@ -20,7 +20,7 @@ module.exports = Backbone.Model.extend({
         title: "Yard3",
         github: "https://jameslaneconkling.github.io/yard3/",
         description: "Yet Another React D3 bindings library: a React-D3 graph visualization library emphasizing composability and extensibility.",
-        img: "code_ii.png",
+        img: "yard.png",
       },
       {
         title: "Rivium",
