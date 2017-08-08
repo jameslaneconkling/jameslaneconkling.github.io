@@ -162,7 +162,7 @@ module.exports = Backbone.Model.extend({
       },
       {
         title: "Night",
-        url: "http://a.tiles.mapbox.com/v3/james-lane-conkling.trial42.html#4.00/35.39/-85.66",
+        url: "api.mapbox.com/v4/james-lane-conkling.trial42/page.html?access_token=pk.eyJ1IjoiY2hpbmFlbnZmb3J1bSIsImEiOiJfRWVWZ3ZrIn0.FOF0CoaD0HmJjmfORHPMqQ#4/33.06/-76.90",
         description: "A map using road and populated place data to simulate a satellite view of the dark side of the earth.",
         img: "night.png",
         print: false
