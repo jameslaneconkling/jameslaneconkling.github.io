@@ -12,7 +12,7 @@ module.exports = Backbone.Model.extend({
     this.set('projects', [
       {
         title: "React-Falcor",
-        github: "gist.github.com/jameslaneconkling/c74b32c7c8922285d4cadb4a54950115",
+        github: "github.com/jameslaneconkling/react-falcor-graph",
         description: "A simple rxjs-powered Higher Order Component to bind React views to the Falcor graph.",
         img: "code_ii.png",
       },
