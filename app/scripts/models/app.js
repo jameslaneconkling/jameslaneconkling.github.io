@@ -12,19 +12,19 @@ module.exports = Backbone.Model.extend({
     this.set('projects', [
       {
         title: "React-Falcor",
-        github: "https://gist.github.com/jameslaneconkling/c74b32c7c8922285d4cadb4a54950115",
+        github: "gist.github.com/jameslaneconkling/c74b32c7c8922285d4cadb4a54950115",
         description: "A simple rxjs-powered Higher Order Component to bind React views to the Falcor graph.",
         img: "code_ii.png",
       },
       {
         title: "Yard3",
-        github: "https://jameslaneconkling.github.io/yard3/",
+        github: "jameslaneconkling.github.io/yard3/",
         description: "Yet Another React D3 bindings library: a React-D3 graph visualization library emphasizing composability and extensibility.",
         img: "yard.png",
       },
       {
         title: "Rivium",
-        url: "http://rivium.io/",
+        url: "rivium.io/",
         description: "Rivium is a data discovery platform for analyzing large, loosely structured data sets.  The application leverages the RDF semantic web data model, and is built out across a number of backend Spring Boot microservices.  Client side architecture leans heavily on Falcor, RxJS, and React/Redux.",
         img: "rivium_iii.png",
       },
