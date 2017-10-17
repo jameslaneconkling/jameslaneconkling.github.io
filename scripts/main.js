@@ -132,10 +132,10 @@ module.exports = Backbone.Model.extend({
 
     this.set('cartography', [
       {
-        title: "Via Dinerica",
+        title: "Via Dinarica",
         url: "api.mapbox.com/styles/v1/james-lane-conkling/cj075bfmm006i2rrrylibk0qn.html?access_token=pk.eyJ1IjoiamFtZXMtbGFuZS1jb25rbGluZyIsImEiOiJ3RHBOc1BZIn0.edCFqVis7qgHPRgdq0WYsA#9.17/44.7732/14.8963",
-        description: "Terrain basemap of the Dineric Alps in the Balkans.",
-        img: "dineric.png",
+        description: "Terrain basemap of the Dinaric Alps in the Balkans.",
+        img: "dinaric.png",
         print: false
       },
       {
