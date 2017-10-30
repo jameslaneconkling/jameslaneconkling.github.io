@@ -203,7 +203,7 @@ header {
     float: left;
     height: $iconWidth;
     width: $iconWidth;
-    background-size: $iconWidth $iconWidth;
+    background-size: $iconWidth - 1px $iconWidth - 1px;
     background-repeat: no-repeat;
     margin-right: 1rem;
     border: 1px solid #BBB;

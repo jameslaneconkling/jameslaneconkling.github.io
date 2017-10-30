@@ -11,6 +11,19 @@ module.exports = Backbone.Model.extend({
     // set portfolio project data
     this.set('projects', [
       {
+        title: "Myriahedron",
+        url: "jameslaneconkling.github.io/myriahedron/",
+        github: "github.com/jameslaneconkling/myriahedron",
+        description: "Tools for streaming, linting, and parsing <a target='_blank' href='//www.gdeltproject.org'>GDELT</a> data.",
+        img: "myriahedron.png",
+      },
+      {
+        title: "GDELT Toolkit",
+        github: "github.com/jameslaneconkling/gdelt-toolkit",
+        description: "Tools to generate and project a myriahedral grid onto the globe, in the style of Buckminster Fuller's famous Dymaxion map.",
+        img: "code_ii.png",
+      },
+      {
         title: "React-Falcor",
         github: "github.com/jameslaneconkling/react-falcor-graph",
         description: "A simple rxjs-powered Higher Order Component to bind React views to the Falcor graph.",
